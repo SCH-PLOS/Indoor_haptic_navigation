@@ -1,0 +1,34 @@
+sudo apt-get update --allow-releaseinfo-change&& sudo apt-get upgrade &&
+sudo apt-get install libusb-dev &&
+sudo apt-get install libdbus-1-dev&&
+sudo apt-get install libglib2.0-dev --fix-missing &&
+sudo apt-get install libudev-dev &&
+sudo apt-get install libical-dev &&
+sudo apt-get install libreadline-dev &&
+sudo apt-get install libdbus-glib-1-dev
+
+sudo apt-get install libdbus-1-dev;
+sudo apt-get install libglib2.0-dev;
+sudo apt-get install libudev-dev;
+sudo apt-get install libical-dev;
+sudo apt-get install libreadline-dev;
+sudo apt-get install libdbus-glib-1-dev;
+
+sudo apt-get install glib2.0;
+
+sudo mkdir bluez cd bluez &&
+sudo wget www.kernel.org/pub/linux/bluetooth/bluez-5.9.tar.gz --no-check-certificate
+sudo wget www.kernel.org/pub/linux/bluetooth/bluez-5.19.tar.gz --no-check-certificate&&
+sudo unzip bluez-5.19.tar.gz &&
+sudo tar xvf bluez-5.19.tar &&
+cd bluez-5.19 &&
+make clean &&
+sudo ./configure --disable-systemd &&
+sudo make install &&
+sudo apt-get install python-bluez
+
+sudo apt-get install git &&
+git config --global http.sslVerify false &&
+git clone https://github.com/switchdoclabs/iBeacon-Scanner- &&
+sudo chown pi iBeacon-Scanner- &&
+sudo chgrp pi iBeacon-Scanner-
